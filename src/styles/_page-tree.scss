@@ -1,0 +1,23 @@
+.page-tree {
+    padding-bottom: 32px;
+
+    &__list {
+        display: flex;
+        font-size: 14px;
+        line-height: 14px;
+        color: $colorGrey;
+
+        .active-link {
+            color: $colorPrimary;
+        }
+    }
+
+    &__item {
+        display: flex;
+    }
+
+    &__title {
+        font-size: 14px;
+        font-weight: 400;
+    }
+}

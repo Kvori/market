@@ -1,0 +1,147 @@
+@media(max-width: 1200px) {
+    .page-tree {
+        padding-bottom: 20px;
+    }
+
+    .container {
+        padding: 0 37px;
+    }
+
+    .card {
+        padding-bottom: 31px;
+
+        &__box {
+            grid-template-columns: 54% 1fr;
+            gap: 82px 32px;
+        }
+
+        &__dscr {
+            &__table-characteristics__tr {
+                &__td-title {
+                    width: 90%;
+                }
+
+                &__td-dscr {
+                    width: 100%;
+                }
+            }
+
+            &__img {
+                max-width: 47.5%;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        padding: 0 72px;
+    }
+
+    .card {
+        padding-bottom: 14px;
+
+        &__box {
+            grid-template-columns: 1fr;
+            gap: 32px;
+        }
+
+        .block-1 {
+            padding: 50px 0;
+        }
+
+        &__dscr {
+
+            &__info {
+                margin-bottom: 32px;
+            }
+
+            &__table-characteristics__tr {
+                &__td-title {
+                    width: 100%;
+                }
+
+                &__td-dscr {
+                    width: 53%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .header {
+        padding-bottom: 26px;
+    }
+
+    .container {
+        padding: 0 12px;
+    }
+
+    .page-tree {
+        display: none;
+    }
+
+    .card {
+        padding-top: 0;
+        padding-bottom: 30px;
+
+        .block-1 {
+            padding: 0;
+            padding-top: 2px;
+        }
+
+        &__box {
+            gap: 32px;
+        }
+
+        &__img {
+            margin-bottom: -16px;
+        }
+
+        &__title {
+            font-size: 16px;
+            line-height: 20.8px;
+        }
+
+        &__price {
+            font-size: 24px;
+            line-height: 31.2px;
+        }
+
+        &__btns-box {
+            max-width: 100%;
+        }
+
+        &__btn-buy {
+            padding: 15px 0;
+            width: 100%;
+            min-width: 100%;
+        }
+
+        &__dscr {
+            &__table-characteristics__tr {
+                display: flex;
+                flex-direction: column;
+
+                .dots {
+                    display: none;
+                }
+
+                &__td-title {
+                    display: flex;
+                    height: 100%;
+                    font-size: 10px;
+                    line-height: 13.62px;
+                }
+
+                &__td-dscr {
+                    width: 100%;
+                    margin-bottom: 11px;
+                }
+            }
+
+
+        }
+    }
+}

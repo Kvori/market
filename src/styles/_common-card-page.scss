@@ -1,0 +1,141 @@
+@import '_mixin.scss';
+@import '_variables.scss';
+
+.header {
+    padding-bottom: 22px;
+}
+
+.card {
+    padding-bottom: 41px;
+    padding-top: 16px;
+
+    &__title {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 31px;
+        margin-bottom: 5px;
+    }
+
+    &__add-info {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 14px;
+        color: $colorGrey;
+        margin-bottom: 21px;
+    }
+
+    &__price {
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 47px;
+    }
+
+    &__btns-box {
+        display: flex;
+        flex-direction: column;
+        max-width: max-content;
+        align-items: center;
+    }
+
+    &__btn-buy {
+        max-width: max-content;
+        padding: 15px 30px;
+        margin-bottom: 15px;
+    }
+
+    &__btn-add {
+        max-width: max-content;
+        color: $colorPrimary;
+    }
+
+    &__dscr {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &__table-characteristics {
+            width: 100%;
+
+            &__tr {
+                display: flex;
+                width: 100%;
+                min-height: 25px;
+
+                .characteristics-title-box {
+                    display: flex;
+                }
+
+                &__td-title {
+                    width: 100%;
+                    color: #999999;
+                    font-size: 14px;
+                    font-weight: 400;
+
+                    &__span {
+                        display: block;
+                    }
+                }
+
+                &__td-dscr {
+                    width: 90%;
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        &__title {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 16px;
+            margin-bottom: 8px;
+        }
+
+        &__info {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 25px;
+        }
+
+        .paragraph-1 {
+            margin-bottom: 10px;
+        }
+
+        .img-box {
+            display: flex;
+            justify-content: space-between;
+            margin-top: auto;
+            max-width: 526px;
+        }
+
+        &__img {
+            max-width: max-content;
+        }
+
+        .dots {
+            display: flex;
+            width: 100%;
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                left: 3px;
+                right: 3px;
+                bottom: 3px;
+                border-bottom: 1px dotted #999999;
+            }
+        }
+    }
+
+    &__rating {
+        font-weight: 400;
+        font-size: 16px;
+        color: #FF862F;
+    }
+}
+
+.titles-list {
+    max-width: 60%;
+    width: 100%;
+}

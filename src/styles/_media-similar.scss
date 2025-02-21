@@ -1,0 +1,33 @@
+@media(max-width: 1200px) {
+    .similar {
+        padding-top: 31px;
+
+        &__box {
+            grid-template-columns: repeat(3, 1fr)
+        }
+    }
+
+    .card-13 {
+        display: none;
+    }
+}
+
+@media(max-width: 992px) {
+    .similar {
+        padding-top: 14px;
+
+        &__box {
+            grid-template-columns: repeat(2, 1fr)
+        }
+
+        .card-12 {
+            display: none;
+        }
+    }
+}
+
+@media(max-width: 520px) {
+    .similar {
+        padding-top: 30px;
+    }
+}

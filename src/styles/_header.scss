@@ -1,0 +1,92 @@
+.header {
+    background: linear-gradient($colorGreyLight 50px, #fff 50px);
+
+    &__tel {
+        display: flex;
+        max-width: max-content;
+        color: $colorSecondary;
+        font-size: 14px;
+        transition: all .3s ease-in-out;
+    }
+
+    .svg-sprite-def {
+        transition: all .3s ease-in-out;
+    }
+
+    .svg-tel {
+        padding-right: 2px;
+        fill: $colorSecondary;
+        transition: all .3s ease-in-out;
+    }
+
+    .additional-block {
+
+        &__list {
+            display: flex;
+            justify-content: space-between;
+            width: 66%;
+            margin-left: auto;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 14px;
+            color: $colorGrey;
+        }
+    }
+
+    .nav {
+        &__list {
+            display: flex;
+            justify-content: space-between;
+            width: 89%;
+            margin-left: auto;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+        }
+    }
+
+    &__search {
+        position: relative; 
+
+        &__input {
+            @include inputDefault;
+            border: 2px solid transparent;
+            width: 100%;            
+            padding: 20px 60px;
+            transition: all .3s ease-in-out;
+        }
+
+        .search-input-svg {
+            position: absolute;
+            left: 34px;
+            top: 24px;
+        }
+
+        &__btn {
+            position: absolute;
+            right: 27px;
+            top: 13px;
+            font-size: 0;
+        }
+    }
+
+    &__icons {
+        display: flex;
+        justify-self: end;
+        font-size: 0;
+
+        &__login {
+            margin-right: 32px;
+        }
+
+        .svg-header-profile {
+            fill: $colorPrimary;
+            transition: all .3s ease-in-out;
+        }
+    }
+}
+
+.label-search-input {
+    display: none;
+    visibility: hidden;
+}

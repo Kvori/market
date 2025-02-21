@@ -1,0 +1,43 @@
+.header {
+    padding-bottom: 32px;
+
+    &__box {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 50px 27px 60px;
+        align-items: center;
+        gap: 32px;
+    }
+
+    &__tel {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+
+    .additional-block {
+        grid-row: 1/2;
+        grid-column: 2/7;
+    }
+
+    &__logo {
+        grid-row: 2/3;
+        grid-column: 1/2;
+        align-self: end;
+    }
+
+    .nav {
+        grid-row: 2/3;
+        grid-column: 2/7;
+        align-self: end;
+    }
+
+    &__search {
+        grid-row: 3/4;
+        grid-column: 1/6;
+    }
+
+    &__icons {
+        grid-row: 3/4;
+        grid-column: 6/7;
+    }
+}

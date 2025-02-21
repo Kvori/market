@@ -1,0 +1,485 @@
+@import '_variables.scss';
+
+// btn-default
+
+.btn-default {
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-default:hover {
+    border-color: $colorPrimaryLight;
+    background-color: $colorPrimaryLight;
+}
+
+.btn-default:focus:not(:hover) {
+    border-color: $colorPrimaryDark;
+    background-color: $colorPrimaryLight;
+}
+
+.btn-default:active {
+    border-color: $colorPrimaryDark;
+    background-color: $colorPrimaryDark;
+}
+
+// btn-card
+
+.btn-card {
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-card:hover {
+    background-color: $colorPrimary;
+    color: #fff;
+}
+
+.btn-card:focus:not(:hover) {
+    background-color: $colorPrimaryLight;
+    color: #fff;
+}
+
+.btn-card:active {
+    background-color: $colorPrimaryDark;
+    border-color: $colorPrimaryDark;
+    color: #fff;
+}
+
+// link-style-nav
+
+ .link-style-nav {
+    max-width: max-content;
+    position: relative;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+}
+
+ .link-style-nav::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 40%;
+    top: 3px;
+    right: 40%;
+    bottom: 3px;
+    background-color: $colorPrimaryLight;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+ .link-style-nav:hover {
+    color: $colorPrimary;
+}
+
+ .link-style-nav:focus:not(:hover) {
+    color: $colorPrimaryDark;
+}
+
+ .link-style-nav:focus:not(:hover)::after {
+    left: -3px;
+    top: -3px;
+    right: -3px;
+    bottom: -3px;
+    opacity: 1;
+}
+
+ .link-style-nav:active {
+    color: $colorPrimaryDark;
+}
+
+// nav__link
+
+.nav__link {
+    position: relative;
+    z-index: 100;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav__link::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 40%;
+    top: 3px;
+    right: 40%;
+    bottom: 3px;
+    background-color: $colorPrimaryLight;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav__link:hover {
+    color: $colorPrimary;
+}
+
+.nav__link:focus:not(:hover) {
+    color: #000;
+}
+
+.nav__link:focus:not(:hover)::after {
+    left: -3px;
+    top: -3px;
+    right: -3px;
+    bottom: -3px;
+    opacity: 1;
+}
+
+.nav__link:active {
+    color: $colorPrimaryDark;
+}
+
+// header__tel
+
+.header__tel {
+    position: relative;
+    z-index: 1000;
+}
+
+.header__tel::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 40%;
+    top: 3px;
+    right: 40%;
+    bottom: 3px;
+    background-color: #FFF5D1;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.header__tel:hover:not(:active) {
+    color: $colorSecondaryLight;
+}
+
+.header__tel:hover:not(:active) .svg-tel {
+    fill: $colorSecondaryLight;
+}
+
+.header__tel:focus:not(:active)::after {
+    left: -3px;
+    top: -3px;
+    right: -3px;
+    bottom: -3px;
+    opacity: 1;
+}
+
+.header__tel:active {
+    color: $colorSecondaryDark;
+}
+
+.header__tel:active .svg-tel {
+    fill: $colorSecondaryDark;
+}
+
+.header__search__input:hover:not(:active) {
+    background-color: #EAEAEA;
+}
+
+.header__search__input:focus:not(:active) {
+    background-color: #F8EFFF;
+    border-color: $colorPrimary;
+}
+
+.search-input-svg path {
+    transition: all .3s ease-in-out;
+}
+
+.header__search__input:active+.search-input-svg path {
+    fill: $colorPrimary;
+}
+
+.svg-arrow-box {
+    transition: all .3s ease-in-out;
+}
+
+.svg-arrow path {
+    transition: all .3s ease-in-out; 
+}
+
+.header__search__btn:hover .svg-arrow-box {
+    background-color: $colorPrimary;
+}
+
+.header__search__btn:hover .svg-arrow path {
+    stroke: #fff;    
+}
+
+.header__search__btn:focus:not(:hover) .svg-arrow-box {
+    background-color: $colorPrimaryLight;
+}
+
+.header__search__btn:focus:not(:hover) .svg-arrow path {
+    stroke: #fff;    
+}
+
+.header__search__btn:active .svg-arrow-box {
+    background-color: $colorPrimaryDark;
+    border-color: $colorPrimaryDark;
+}
+
+.header__search__btn:hover .svg-arrow path {
+    stroke: #fff;    
+}
+
+.profile-link {
+    position: relative;
+    z-index: 1000;
+    height: 100%;
+    display: flex;
+}
+
+.profile-link:hover:not(:active) .svg-header-profile {
+    fill: $colorPrimaryLight;
+}
+
+.profile-link::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 40%;
+    top: 3px;
+    right: 40%;
+    bottom: 3px;
+    background-color: #C998FB;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.profile-link:focus:not(:active):not(:hover):after {
+    left: -3px;
+    top: -3px;
+    right: -3px;
+    bottom: -3px;
+    opacity: 1;
+}
+
+.profile-link:focus:not(:active):not(:hover) .svg-header-profile {
+    fill: #fff;
+}
+
+.profile-link:active .svg-header-profile {
+    fill: $colorPrimaryDark;
+}
+
+.top-card__btn:hover .svg-arrow-box {
+    background-color: $colorPrimary;
+}
+
+.top-card__btn:hover .svg-arrow path {
+    stroke: #fff;    
+}
+
+.top-card__btn:focus:not(:hover) .svg-arrow-box {
+    background-color: $colorPrimaryLight;
+}
+
+.top-card__btn:focus:not(:hover) .svg-arrow path {
+    stroke: #fff;    
+}
+
+.top-card__btn:active .svg-arrow-box {
+    background-color: $colorPrimaryDark;
+    border-color: $colorPrimaryDark;
+}
+
+.top-card__btn:hover .svg-arrow path {
+    stroke: #fff;    
+}
+
+.text-decor-1 {
+    position: relative;
+}
+
+.text-decor-1::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    bottom: -3px;
+    left: 50%;
+    border-bottom: 2px solid $colorPrimary;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+
+.top-card__btn {
+    transition: all .3s ease-in-out;
+}
+
+.top-card__btn:hover .text-decor-1::after {
+    opacity: 1;
+    width: 100%;
+    left: 0;
+}
+
+.top-card__btn:focus .text-decor-1::after {
+    opacity: 1;
+    width: 100%;
+    left: 0;
+}
+
+.top-card__btn:active {
+    color: $colorPrimaryDark;
+}
+
+.top-card__btn:active .text-decor-1::after {
+    opacity: 1;
+    width: 100%;
+    left: 0;
+    border-color: $colorPrimaryDark;
+}
+
+.feedback__form__input {
+    border: 1px solid transparent;
+    transition: all .3s ease-in-out;
+}
+
+.feedback__form__input:hover:not(:active) {
+    background-color: #EAEAEA;
+}
+
+.feedback__form__input:focus:not(:active) {
+    background-color: #F8EFFF;
+    border-color: $colorPrimary;
+}
+
+.feedback__form__input:active {
+    border-color: #B8EC64;
+}
+
+// FOOTER
+
+.footer__left__messengers__link:hover svg {
+    fill: $colorPrimary;
+}
+
+.messenger-link-svg {
+    position: relative;
+    z-index: 1000;
+}
+
+.footer__left__messengers__link {
+    position: relative;
+    z-index: 1000;
+}
+
+.footer__left__messengers__link::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 40%;
+    top: 3px;
+    right: 40%;
+    bottom: 3px;
+    background-color: #C998FB;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer__left__messengers__link:focus:not(:active):not(:hover)::after {
+    left: -3px;
+    top: -3px;
+    right: -3px;
+    bottom: -3px;
+    opacity: 1;
+}
+
+.footer__left__messengers__link:focus:not(:hover) svg {
+    fill: #fff;
+}
+
+.footer__left__messengers__link:active svg {
+    fill: $colorPrimaryDark;
+}
+
+// CATALOG-PAGE
+
+.banner__btn:hover .text-decor-1::after {
+    opacity: 1;
+    width: 100%;
+    left: 0;
+}
+
+.banner__btn:focus .text-decor-1::after {
+    opacity: 1;
+    width: 100%;
+    left: 0;
+}
+
+.banner__btn:active {
+    color: $colorPrimaryDark;
+}
+
+.banner__btn:active .text-decor-1::after {
+    opacity: 1;
+    width: 100%;
+    left: 0;
+    border-color: $colorPrimaryDark;
+}
+
+.banner__btn:hover .svg-arrow-box {
+    background-color: $colorPrimary;
+}
+
+.banner__btn:hover .svg-arrow path {
+    stroke: #fff;    
+}
+
+.banner__btn:focus:not(:hover) .svg-arrow-box {
+    background-color: $colorPrimaryLight;
+}
+
+.banner__btn:focus:not(:hover) .svg-arrow path {
+    stroke: #fff;    
+}
+
+.banner__btn:active .svg-arrow-box {
+    background-color: $colorPrimaryDark;
+    border-color: $colorPrimaryDark;
+}
+
+.banner__btn:hover .svg-arrow path {
+    stroke: #fff;    
+}
+
+.catalog__filter__form__input {
+    transition: all .3s ease-in-out;
+}
+
+.catalog__filter__form__input:hover:not(:active) {
+    border-color: $colorPrimary;
+}
+
+.catalog__filter__form__input:focus:not(:active) {
+    border-color: $colorPrimary;
+    background-color: #EBD1FF;
+}
+
+.catalog__filter__form__input:active {
+    border-color: $colorPrimaryDark;
+}
+
+.card__btn-add {
+    
+}
+
+.card__btn-add:hover .text-decor-1::after {
+    opacity: 1;
+    width: 100%;
+    left: 0;
+}
+
+.card__btn-add:focus .text-decor-1::after {
+    opacity: 1;
+    width: 100%;
+    left: 0;
+}
+
+.card__btn-add:active {
+    color: $colorPrimaryDark;
+}
+
+.card__btn-add:active .text-decor-1::after {
+    opacity: 1;
+    width: 100%;
+    left: 0;
+    border-color: $colorPrimaryDark;
+}

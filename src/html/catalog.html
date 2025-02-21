@@ -1,0 +1,109 @@
+<section class="catalog">
+  <div class="container">
+    <div class="catalog__box">
+      <div class="catalog__filter">
+        <h3 class="catalog__filter__title visibility-visible">
+          Фильтровать&nbsp;по:
+        </h3>
+        <h2 class="catalog__title visibility-hidden">Каталог</h2>
+        <div class="catalog__filter__box">
+          <form action="#" class="catalog__filter__form">
+            <h3 class="catalog__filter__form__title">Цвет</h3>
+            <label class="checkbox-label">
+              <input type="checkbox" class="checkbox" >
+              <span class="custom-checkbox"></span>
+              <span class="label-text">Коричневый</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" class="checkbox" checked>
+              <span class="custom-checkbox"></span>
+              <span class="label-text">Черный</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" class="checkbox" >
+              <span class="custom-checkbox"></span>
+              <span class="label-text">Синий</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" class="checkbox" >
+              <span class="custom-checkbox"></span>
+              <span class="label-text">Белый</span>
+            </label>
+          </form>
+          <form action="#" class="catalog__filter__form">
+            <h3 class="catalog__filter__form__title">Категория</h3>
+            <label class="checkbox-label">
+              <input type="checkbox" class="checkbox" checked>
+              <span class="custom-checkbox"></span>
+              <span class="label-text">Диваны</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" class="checkbox" >
+              <span class="custom-checkbox"></span>
+              <span class="label-text">Кресла</span>
+            </label>
+          </form>
+          <form action="#" class="catalog__filter__form-price">
+            <h3 class="catalog__filter__form__title">Цена</h3>
+            <div class="label-box">
+              <label class="label-input">
+                от
+                <input
+                  type="number"
+                  class="catalog__filter__form__input"
+                  placeholder="2000"
+                >
+              </label>
+              <label class="label-input">
+                до
+                <input
+                  type="number"
+                  class="catalog__filter__form__input"
+                  placeholder="150 000"
+                >
+              </label>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="catalog__content">
+        <h2 class="catalog__title visibility-visible">Каталог</h2>
+        <ul class="catalog__content__list">
+          <li class="catalog__content__item">
+            @@include('cards/sofa/card-1.html')
+          </li>
+          <li class="catalog__content__item">
+            @@include('cards/sofa/card-2.html')
+          </li>
+          <li class="catalog__content__item">
+            @@include('cards/sofa/card-3.html')
+          </li>
+          <li class="catalog__content__item">
+            @@include('cards/sofa/card-4.html')
+          </li>
+          <li class="catalog__content__item">
+            @@include('cards/sofa/card-5.html')
+          </li>
+          <li class="catalog__content__item">
+            @@include('cards/sofa/card-6.html')
+          </li>
+          <li class="catalog__content__item visible-card">
+            @@include('cards/sofa/card-7.html')
+          </li>
+          <li class="catalog__content__item visible-card">
+            @@include('cards/sofa/card-8.html')
+          </li>
+          <li class="catalog__content__item visible-card">
+            @@include('cards/sofa/card-9.html')
+          </li>
+        </ul>
+      </div>
+      @@include('banner-card.html')
+      <div class="catalog__pagination">
+        <button class="catalog__pagination__btn btn-default">1</button>
+        <button class="catalog__pagination__btn btn-card">2</button>
+        <button class="catalog__pagination__btn btn-card hidden-btn">3</button>
+      </div>
+    </div>
+  </div>
+</section>

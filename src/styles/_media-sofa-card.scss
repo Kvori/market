@@ -1,0 +1,43 @@
+@media (max-width: 700px) {
+    .sofa-card {
+        padding: 16px;
+        padding-top: 150px;
+    }
+}
+
+@media (max-width: 520px) {
+    .sofa-card {
+        padding: 16px;
+        padding-top: 106px;
+
+        &__rating {
+            top: 18px;
+            left: 16px;
+            font-size: 12px;
+
+            svg {
+                width: 13px;
+                height: 12px;
+            }
+        }
+
+        &__title {
+            font-size: 16px;
+            line-height: 21px;
+            margin-bottom: 11px;
+        }
+
+        &__price {
+            font-size: 16px;
+        }
+
+        &__dscr {
+            margin-bottom: 16px;
+        }
+
+        .btn-card {
+            padding: 10px;
+            max-width: 100%;
+        }
+    }
+}

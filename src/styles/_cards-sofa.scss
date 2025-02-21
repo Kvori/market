@@ -1,0 +1,20 @@
+.sofa-card {
+    @include cardStyle;
+    padding-top: 190px;
+
+    &__rating {
+        @include absoluteSpan;
+        top: 32px;
+        left: 30px;
+        color: $colorSecondary;
+    }
+
+    &__img {
+        @include cardImg;
+    }
+
+    &__price {
+        @include price;
+        color: $colorGreyShade;
+    }
+}

@@ -1,3 +1,5 @@
+# The project is implemented adaptive HTML layout using the ```Gulp``` compiler.
+
 ## Description
 
 This project is an online store on three pages: home page, product card, product catalog.

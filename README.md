@@ -1,4 +1,4 @@
-# The project is implemented adaptive HTML layout using the ```Gulp``` compiler.
+# The project is implemented adaptive HTML layout and using the ```Gulp``` compiler.
 
 ## Description
 
